@@ -40,7 +40,7 @@ Se creará un ambiente virtual con el nombre *ESP32obj* con la versión 3.7.13 d
 
 
 
-# Instrucciones del programa _reconocimientoESP32.py_ para detectar los objetos
+## Instrucciones del programa _reconocimientoESP32.py_ para detectar los objetos
 
 # Instrucciones de uso
 
