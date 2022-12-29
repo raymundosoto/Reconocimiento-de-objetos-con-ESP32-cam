@@ -1,4 +1,4 @@
-# Reconocimiento de objetos con ESP32CAM
+# Reconocimiento de objetos con ESP32CAM, OpenCv y YOLO
  Este repositorio contiene la descripción del proyecto y archivos necesarios para reconocer objetos usando redes neuronales con el ESP32 CAM.
 
 
