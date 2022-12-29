@@ -50,7 +50,6 @@ Se creará un ambiente virtual con el nombre *ESP32obj* con la versión 3.7.13 d
 
 Con esto ya podemos correr el script de python pero antes de correrlo debemos programar el ESP32 CAM para capturar las imágenes
 
-
 # Instrucciones de programación del ESP32 CAM como servidor web
 
 - Abrir el archivo _CameraWebServer.ino_ de la carpeta CameraWebServer con el IDE de Arduino
@@ -74,6 +73,8 @@ url = 'http://192.168.100.xxx/capture'    #Aquí se debe insertar la IP que arro
 `python reconocimientoESP32.py`
 
 Si todo se realizó correctamente debería observar una ventana donde se transmiten las imágenes y los objetos reconocidos dentro de ellas
+
+![Objetos](https://github.com/raymundosoto/Reconocimiento-de-objetos-con-ESP32-cam/blob/main/im%C3%A9genes/objetos_reconocimiento.png?raw=true)
 
 ## Notas del uso del script
 
