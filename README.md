@@ -27,7 +27,7 @@ En todas las instrucciones a continuación se considera que se conoce el manejo 
 - Crear un carpeta con el nombre que se quiera para el proyecto
 - Abrir una terminal en la carpeta y clonar el repositorio con todos los archivos
 
-´git clone https://github.com/raymundosoto/Reconocimiento-de-objetos-con-ESP32-cam´
+`git clone https://github.com/raymundosoto/Reconocimiento-de-objetos-con-ESP32-cam`
 
 # Instrucciones de programación
 
