@@ -57,12 +57,21 @@ Con esto ya podemos correr el script de python pero antes de correrlo debemos pr
 - Conectar el ESP32CAM a la computadora con el cable USB
 - Subir al ESP32CAM el archivo _CameraWebServer.ino_
 - Una vez subido el programa al ESP32 CAM revisar el monitor serial para leer la dirección IP que nos ayudará a obtener las imágenes, el monitor serie se verá algo así una vez conectado al WiFi
+
 ~~~
 WiFi connected
 Camera Ready! Use 'http://192.168.100.xxx' to connect
 ~~~
 
+Copiar la dirección IP y pegarla en el script de Python en la siguiente línea
 
+~~
+url = 'http://192.168.100.xxx/capture'    #Aquí se debe insertar la IP que arroja el monitor serial del IDE de Arduino
+~~
+
+- Guardar el archivo .py y correrlo desde la terminal que está abierta en la carpeta de nuestro proyecto y donde se ejecuta nuestro ambiente virtual
+
+`python reconocimientoESP32.py`
 
 
 

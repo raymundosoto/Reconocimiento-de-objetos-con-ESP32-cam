@@ -5,10 +5,11 @@ import numpy as np
 #PROGRAMA DE CLASIFICACION DE OBJETOS PARA VIDEO EN DIRECCION IP 
 
 url = 'http://192.168.100.142/capture'    #Aquí se debe insertar la IP que arroja el monitor serial del IDE de Arduino
-#url = 'http://192.168.1.6/'
+
 winName = 'Cámara ESP32'
 cv2.namedWindow(winName,cv2.WINDOW_AUTOSIZE)
 
+# Configuración de la red neuronal 
 
 classNames = []
 classFile = 'coco.names'  #Archivo con los nombres de los objetos a reconocer
