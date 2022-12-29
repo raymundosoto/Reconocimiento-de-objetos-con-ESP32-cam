@@ -21,6 +21,8 @@ Este proyecto se corrió en Linux en una máquina virtual con Ubuntu 22.04 pero 
 
 - Instalar IDE de Arduino [Guía de instalación](https://ubunlog.com/arduino-ide-entorno-desarrollo-para-trabajar-con-arduino/?utm_source=dlvr.it&utm_medium=twitter)
 
+- Confugurar el IDE de Arduino para programar el ESP32CAM [Guía de configuración](https://randomnerdtutorials.com/program-upload-code-esp32-cam/)
+
 - Instalar Anaconda en linux [Guía de instalación de Anaconda](https://noviello.it/es/como-instalar-anaconda-en-ubuntu-22-04/)
 
 En todas las instrucciones a continuación se considera que se conoce el manejo de la terminal de Linux por lo que las instrucciones se escribe directamente en la terminal. 
@@ -38,9 +40,27 @@ Con esta instrucción, todos los archivos se guardarán en la carpeta creada ant
 
 Se creará un ambiente virtual con el nombre *ESP32obj* con la versión 3.7.13 de Python
 
+- Activamos el ambiente virtual para configurarlo con las bibliotecas que necesitamos
+
+`conda activate ESP32obj`
+
+- Instalamos las bibliotecas listadas en el archivo **requeriments.txt**
+
+`pip install requeriments.txt`
+
+Con esto ya podemos correr el script de python pero antes de correrlo debemos programar el ESP32 CAM para capturar las imágenes
 
 
-## Instrucciones del programa _reconocimientoESP32.py_ para detectar los objetos
+# Instrucciones de programación del ESP32 CAM como servidor web
+
+- Abrir el archivo _CameraWebServer.ino_ de la carpeta CameraWebServer con el IDE de Arduino
+- Conectar el ESP32CAM a la computadora con el cable USB
+- Subir al ESP32CAM el archivo _CameraWebServer.ino_
+- Una vez subido el programa al ESP32 CAM revisar el monitor serial para leer la dirección IP que nos ayudará a obtener las imágenes
+
+
+
+
 
 # Instrucciones de uso
 
