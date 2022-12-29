@@ -41,6 +41,16 @@ while(1):
         for classId, confidence,box in zip(classIds.flatten(),confs.flatten(),bbox):
             cv2.rectangle(img,box,color=(0,255,0),thickness = 3) #mostramos en rectangulo lo que se encuentra
             cv2.putText(img, classNames[classId-1], (box[0]+10,box[1]+30), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0),2)
+            
+            
+    #Reescalamiento de la imagen
+    scale_percent = 200 # porcentaje de la dimensiones de la imegn img
+    width = int(img.shape[1] * scale_percent / 100)
+    height = int(img.shape[0] * scale_percent / 100)
+    dim = (width, height)
+
+# resize image
+    img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
 
 
     cv2.imshow(winName,img) # mostramos la imagen
