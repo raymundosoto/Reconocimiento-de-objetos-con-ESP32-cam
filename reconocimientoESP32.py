@@ -45,7 +45,7 @@ while(1):
             
             
     #Reescalamiento de la imagen
-    scale_percent = 200 # porcentaje de la dimensiones de la imegn img
+    scale_percent = 200 # porcentaje de la dimensiones de la imagen img
     width = int(img.shape[1] * scale_percent / 100)
     height = int(img.shape[0] * scale_percent / 100)
     dim = (width, height)

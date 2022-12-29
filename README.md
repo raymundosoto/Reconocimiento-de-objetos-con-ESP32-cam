@@ -65,17 +65,27 @@ Camera Ready! Use 'http://192.168.100.xxx' to connect
 
 Copiar la dirección IP y pegarla en el script de Python en la siguiente línea
 
-~~
+~~~
 url = 'http://192.168.100.xxx/capture'    #Aquí se debe insertar la IP que arroja el monitor serial del IDE de Arduino
-~~
+~~~
 
 - Guardar el archivo .py y correrlo desde la terminal que está abierta en la carpeta de nuestro proyecto y donde se ejecuta nuestro ambiente virtual
 
 `python reconocimientoESP32.py`
 
+Si todo se realizó correctamente debería observar una ventana donde se transmiten las imágenes y los objetos reconocidos dentro de ellas
 
+## Notas del uso del script
 
-# Instrucciones de uso
+Si requiere que la ventana de salida con las imágenes sea más grande modifica la siguiente línea del script de python
+
+~~~
+#Reescalamiento de la imagen
+    scale_percent = 200 # porcentaje de la dimensiones de la imagen img
+~~~
+
+scale_percent puede tener valores arriba de 100, incluso menores de 100 pero esto provocaría que la imagen de salida sea más pequeña.
+
 
 # Resultados
  
