@@ -85,7 +85,7 @@ Si requiere que la ventana de salida con las imágenes sea más grande modifica 
     scale_percent = 200 # porcentaje de la dimensiones de la imagen img
 ~~~
 
-scale_percent puede tener valores arriba de 100, incluso menores de 100 pero esto provocaría que la imagen de salida sea más pequeña.
+_scale_percent_ puede tener valores arriba de 100, incluso menores de 100 pero esto provocaría que la imagen de salida sea más pequeña.
 
 
 # Resultados
@@ -93,5 +93,4 @@ scale_percent puede tener valores arriba de 100, incluso menores de 100 pero est
 Los faltos positivos de la detección de objetos se pueden mejorar usando algunas otras redes neuronales para objetos dentro de imágenes pero en general la detección es muy buena considerando las características del ESP32CAM
 
 ![objetoss](https://github.com/raymundosoto/Reconocimiento-de-objetos-con-ESP32-cam/blob/main/im%C3%A9genes/reconocimiento%20objetos.png?raw=true)
-
 
